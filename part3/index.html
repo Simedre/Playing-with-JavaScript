@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing-with-JavaScript-part3</title>
+    <meta name="author" content="Adrian Simedre">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="block">
+        <p>1.Creati 2 inputuri si colorati ambele inputuri verzi daca valoarea din casuta 1 si din casuta 2 sunt egale</p>
+        <input type="number" id="input1"></br>
+        <input type="number" id="input2"></br>
+        <button onclick="ver()">Verifica</button>
+        <p id="rez1"></p>
+    </div>
+    <div class="block">
+        <p>2.Creati 2 inputuri si colorati inputul care are valoarea mai mare. Daca sunt egale, colorati-le pe ambele</p>
+        <input type="number" id="input3"></br>
+        <input type="number" id="input4"></br>
+        <button onclick="def()">Verifica</button>
+        <p id="rez2"></p>
+    </div>
+    <div class="clear"></div>
+    <div class="block">
+        <p>3.Creati 3 inputuri si afisati in al 3-lea input valoarea inputului mai mare dintre primul si al doilea</p>
+        <input type="number" id="input5"></br>
+        <input type="number" id="input6"></br>
+        <button onclick="A()">Verifica</button>
+        <input type="text" id="input7">
+        <p id="rez3"></p>
+    </div>
+    <div class="block">
+        <p>4.Creati 3 inputuri si afisati in al 3-lea input suma primului + celui de-al 2-lea  input </p>
+        <input type="number" id="input8"></br>
+        <input type="number" id="input9"></br>
+        <button onclick="S()">Suma este:</button>
+        <input type="text" id="input10">
+    </div>
+    <div class="clear"></div>
+    <div class="block">
+        <p>5.Creati 1 input si afisati intr-un span/div in coltul dreapta jos, lungimea sirului de caractere tastat.</p>
+        <textarea id="input11" onfocus="T()"></textarea>
+        <div id="textL"></div>
+    </div>
+    <div class="block">
+        <p>6.Creati 1 input si plecand de la ex 5, limitati numarul de caractere la 10. In momentul in care am ajuns la 10, inrositi counterul si folosind event.preventDefault() pe evenimentul onkeypress opriti utilizatorul sa mai introduca caractere in plus</p>
+        <input type="text" id="input12" onkeydown="limit()" onkeyup="limit()">
+        <p id="rez4"></p>
+    </div>
+    <div class="clear"></div>
+    <div class="block">
+        <p>7.Creati 1 input si folosind event.preventDefault pe evenimentul onkeypress, opriti utilizatorul sa mai introduca orice altceva decat numere. (tip: puteti sa gasiti caracterul tastat in event.key)</p>
+        <input type="text" id="input13">
+        <p id="rez5"></p>
+    </div>
+</body>
+</html>
