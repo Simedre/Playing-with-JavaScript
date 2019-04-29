@@ -5,5 +5,4 @@
 
 > Playing-with-JavaScript
 
-- Part 1
-    - [Tema 01](https://simedre.github.io/Playing-with-JavaScript/part1/index.html)
+-[Part 1](https://simedre.github.io/Playing-with-JavaScript/part1/index.html)
