@@ -1,0 +1,82 @@
+body{
+    background-color: #297A4A;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+    height: 5px;
+    background-color: black;
+}
+.demo{
+    margin: 20px;
+}
+input{
+    height: 20px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ABDD93;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ABDD93;
+    color: black;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #003D19;
+    color: white;
+    box-shadow: 5px 5px 10px gray;
+}
+.hiddendiv{
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    width: auto;
+    box-shadow: 10px 10px 10px grey;
+    background-color: #CEEC9D;
+    text-align: left;
+}
+.show{
+    display: inline-block;
+}
+.function{
+    margin-left: 5px;
+}
+.tab1{
+    margin-left: 15px;
+}
+.tab2{
+    margin-left: 25px;
+}
+.tab3{
+    margin-left: 35px;
+}
+.tab4{
+    margin-left: 45px;
+}
+.block{
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 30px;
+    float: left;
+    margin: 40px;
+    text-align: center;
+    box-shadow: 10px 10px 20px #ABDD93;
+    background-color: #759D34;
+}
+.clear{
+    clear: both;
+}
