@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript DOM [13 exercises]</title>
+    <meta name="author" content="Adrian Simedre">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="getSize()" onresize="getSize()">
+    <div class="ex">
+        <h3>1.Here is a sample html file with a submit button. Now modify the style of the paragraph text through javascript code.</h3>
+        <p id ='text'>If you press the button I will change my style</p>
+        <div>
+            <button onclick="A()">Style</button>
+        </div>
+    </div>
+    <div class="ex">
+        <h3>2.Write a JavaScript function to get the values of First and Last name of the following form.</h3>
+        <form id="form1" onsubmit="event.preventDefault(); getFormvalue()">
+            First name: <input type="text" id="fname" name="fname" value="David"><br>
+            Last name: <input type="text" id="lname" name="lname" value="Beckham"><br>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <div class="ex">
+        <h3>3.Write a JavaScript program to set the background color of a paragraph.</h3>
+        <p id="text2">If you press the button I will change my background color</p>
+        <div>
+            <button onclick="set_background()">Style</button>
+        </div>
+    </div>
+    <div class="ex">
+        <h3>4.Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link.</h3>
+        <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.google.com/">Google</a></p>
+        <button onclick="getAttributes()">Click here to get  attributes value</button>
+        <p id="result2"></p>
+    </div>
+    <div class="ex">
+        <h3>5.Write a JavaScript function to add rows to a table.</h3>
+        <table id="sampleTable" border="1">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+        </table><br>
+        <input type="button" onclick="insert_Row()" value="Insert row">
+    </div>
+    <div class="ex">
+        <h3>6.Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell.</h3>
+        <table id="myTable" border="1">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+            </tr>
+        </table>
+        <form>
+            <input type="button" onclick="changeContent()" value="Change content">
+        </form>
+    </div>
+    <div class="ex">
+        <h3>7. Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell.</h3>
+        <table id="myTable2" border="1"></table>
+        <form>
+            <input type="button" onclick="createTable()" value="Create the table">
+        </form>
+    </div>
+    <div class="ex">
+        <h3>8. Write a JavaScript program to remove items from a dropdown list.</h3>
+        <form>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input type="button" onclick="removecolor()" value="Select and Remove">
+        </form>
+    </div>
+    <div class="ex">
+        <h3>9. Write a JavaScript program to count and display the items of a dropdown list, in an alert window.</h3>
+        <form>
+            Select your favorite Color :
+            <select id="mySelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+                <option>White</option>
+            </select>
+            <input type="button" onclick="getOptions()" value="Count and Output all items">
+        </form>
+    </div>
+    <div class="ex">
+        <h3>10. Write a JavaScript program to calculate the volume of a sphere. </h3>
+        <p>Input radius value and get the volume of a sphere.</p>
+        <form action="" method="post" id="MyForm">
+            <label for="radius">Radius</label>
+                <input type="text" name="radius" id="radius" required>
+            <label for="volume">Volume</label>
+                <input type="text" name="volume" id="volume">
+            <input type="submit" value="Calculate" id="submit">
+        </form>
+    </div>
+    <div class="ex" id="exImg">
+        <h3>11. Write a JavaScript program to display a random image (clicking on a button) from the following list. </h3>
+        <div>
+            <button id="jsstyle" onclick="display_random_image();">Show Image</button> 
+        </div>
+    </div>
+    <div class="ex">
+        <h3>12. Write a JavaScript program to highlight the bold words of the following paragraph, on mouse over a certain link.</h3>
+        <p>[<a href="#" onMouseOver="highlight()" onMouseOut="return_normal()">On mouse over here bold words of the following paragraph will be highlighted</a>]</p> 
+        <p><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>
+    </div>
+    <div class="ex">
+        <h3>13. Write a JavaScript program to get the width and height of the window (any time the window is resized).</h3>
+        <div id="wh"> 
+            <!-- Place height and width size here! --> 
+        </div>
+    </div>
+</body>
+</html>
