@@ -10,4 +10,5 @@
   -[Part 1](http://htmlpreview.github.io/?https://github.com/Simedre/Playing-with-JavaScript/blob/master/part1/index.html)</br>
   -[Part 2](http://htmlpreview.github.io/?https://github.com/Simedre/Playing-with-JavaScript/blob/master/part2/index.html)</br>
   -[Part 3](http://htmlpreview.github.io/?https://github.com/Simedre/Playing-with-JavaScript/blob/master/part3/index.html)</br>
-
+>JavaScript DOM</br>
+  -[Part 1 (13 exercises)](http://htmlpreview.github.io/?https://github.com/Simedre/Playing-with-JavaScript/blob/master//JavaScript DOM [13 exercises]//index.html)</br>
